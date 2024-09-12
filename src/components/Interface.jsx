@@ -50,10 +50,10 @@ const AboutSection = (props) => {
       <h1 className="text-4xl md:text-6xl font-extrabold leading-snug mt-8 md:mt-0">
         Hi, I'm
         <br />
-        <span className="bg-white px-1 italic">Wawa Sensei</span>
+        <span className=" px-1 italic mt-4">Onur Ayyıldız</span>
       </h1>
       <motion.p
-        className="text-lg text-gray-600 mt-4"
+        className="text-lg text-white mt-4  flex flex-col gap-6"
         initial={{
           opacity: 0,
           y: 25,
@@ -67,9 +67,10 @@ const AboutSection = (props) => {
           delay: 1.5,
         }}
       >
-        I make YouTube videos to help developers
+
+        I am someone who is eager to improve himself in the frontend field.
         <br />
-        learn how to build 3D apps
+        I am a third year computer engineering student at Trakya University
       </motion.p>
       <motion.button
         onClick={() => setSection(3)}
@@ -96,39 +97,29 @@ const AboutSection = (props) => {
 
 const skills = [
   {
-    title: "Threejs / React Three Fiber",
+    title: "React ",
     level: 80,
   },
   {
-    title: "React / React Native",
+    title: " React Native",
     level: 90,
   },
   {
-    title: "Nodejs",
+    title: "JavaScript",
     level: 90,
   },
   {
-    title: "Typescript",
+    title: "React Three Fiber",
     level: 60,
   },
-  {
-    title: "3D Modeling",
-    level: 40,
-  },
+
 ];
 const languages = [
-  {
-    title: "🇫🇷 French",
-    level: 100,
-  },
   {
     title: "🇺🇸 English",
     level: 80,
   },
-  {
-    title: "🇯🇵 Japanese",
-    level: 20,
-  },
+
 ];
 
 const SkillsSection = () => {
@@ -250,7 +241,7 @@ const ProjectsSection = () => {
         >
           ← Previous
         </button>
-        <h2 className="text-3xl md:text-5xl font-bold">Projects</h2>
+        <h2 className="text-3xl md:text-5xl font-bold">projects I worked on</h2>
         <button
           className="hover:text-indigo-600 transition-colors"
           onClick={nextProject}

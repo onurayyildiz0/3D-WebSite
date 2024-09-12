@@ -8,35 +8,24 @@ import { useEffect, useRef } from "react";
 
 export const projects = [
   {
-    title: "Wawatmos",
-    url: "https://r3f-wawatmos-final.vercel.app/",
-    image: "projects/wawatmos.jpg",
-    description: "Recreating the Atmos Awwwards website with React Three Fiber",
+    title: "Garantili Evim",
+    url: "https://www.garantilievim.com",
+    image: "projects/garantilievim.png",
+
   },
   {
-    title: "Portfolio Baking",
+    title: "Wrab",
     url: "https://www.youtube.com/watch?v=YkHqpqJgLKw",
     image: "projects/baking.jpg",
-    description: "Learn how to bake a 3D model with Blender and use it in r3f",
+
   },
   {
-    title: "3D Avatar",
-    url: "https://www.youtube.com/watch?v=pGMKIyALcK0",
-    image: "projects/avatar.jpg",
-    description: "Learn how to use ReadyPlayerMe to create a 3D avatar",
+    title: "Trakya Teknopark ",
+    url: "https://trakyateknopark.com.tr",
+    image: "projects/teknopark.jpeg",
+
   },
-  {
-    title: "Kanagame",
-    url: "https://www.youtube.com/watch?v=zwNF1-lsia8",
-    image: "projects/kanagame.jpg",
-    description: "Use React Three Fiber to create a 3D game",
-  },
-  {
-    title: "Loader",
-    url: "https://www.youtube.com/watch?v=L12wIvuZTOY",
-    image: "projects/loader.jpg",
-    description: "Create a loading screen for your r3f projects",
-  },
+
 ];
 
 const Project = (props) => {
@@ -85,7 +74,7 @@ const Project = (props) => {
         fontSize={0.1}
         position={[-1, -0.6, 0]}
       >
-        {project.description}
+
       </Text>
     </group>
   );
